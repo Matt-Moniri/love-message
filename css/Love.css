@@ -1,0 +1,276 @@
+html {
+    width: 100%;
+    height: 75vw;
+    margin: 0;
+    padding: 0;
+    bbackground: linear-gradient(to bottom, transparent, transparent, transparent, #278ae6);
+    position: relative;
+    bz-index: 2;
+}
+
+body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    bbackground: radial-gradient(at 100% 0%, #f9d71c 10%, transparent 25%);
+    bz-index: 2;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+div.sBlock {
+    position: relative;
+    width: 510px;
+    height: Auto;
+    margin: 10px;
+}
+
+span.tag {
+    display: inline-block;
+    width: 280px;
+    height: 20px;
+    ffont-size: 1.2em;
+}
+
+.switchContainer {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 0%;
+    ffloat: right;
+}
+
+span.switch {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0%;
+    bottom: 0%;
+    border: grey solid 2px;
+    border-radius: 5px;
+    transition: 400ms;
+}
+
+
+/*span.switch:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 45px;
+    height: 40px;
+    background-color: grey;
+    border-radius: 5px;
+    transition: 400ms;
+}*/
+
+input[type="checkbox"]:checked+span.switch {
+    bbackground-color: blueviolet;
+    background-image: url("../images/ok.png");
+    background-size: cover;
+}
+
+
+/*start text input*/
+
+div.tInputBlock {
+    position: relative;
+    width: 510px;
+    height: auto;
+    ppadding: 25px;
+    margin: 10px 10px;
+    display: block;
+}
+
+span.tInputTag {
+    ffont-size: 1.2em;
+    display: block;
+}
+
+input.tInputField {
+    display: block;
+    width: 410px;
+    font-size: 1.2em;
+    cfloat: right;
+    margin: 0ch;
+    border-radius: 5px;
+}
+
+
+/*.size {
+    width: 510px;
+    height: 100px;
+    padding: 0;
+    margin: 0%;
+    margin-top: 50px;
+    background-color: coral;
+}*/
+
+input.nextButton {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 10%;
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+div#secondWallpaper1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    bbackground-color: aqua;
+}
+
+div#secondWallpaper2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(255, 157, 0);
+}
+
+.p1 {
+    z-index: 2;
+}
+
+.wp1 {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.p2 {
+    z-index: 0;
+}
+
+.wp2 {
+    z-index: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    rright: 0;
+    top: 0;
+    rbottom: 0;
+    opacity: 0;
+}
+
+.wp1#wp1layer1 {
+    background: linear-gradient(to bottom, transparent, #278ae6);
+}
+
+.wp1#wp1layer2 {
+    background: radial-gradient(at 100% 0%, #f9d71c 10%, transparent 25%);
+}
+
+
+/*
+.wp2#layer1 {
+    background: url("../images/wed.jpg");
+    background-size: cover;
+    opacity: 20%;
+}
+
+.wp2#layer2 {
+    bbackground-color: rgb(247, 0, 255);
+    oopacity: 20%;
+}*/
+
+.storyOut {
+    bborder: solid #0b060c;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0%;
+    display: block;
+    background: url("../images/love.jpg");
+    background-size: cover;
+    opacity: 100%;
+    bborder: solid red;
+}
+
+
+/*.picture {
+    border: solid rgb(0, 38, 255);
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+}*/
+
+.storyOutText {
+    position: absolute;
+    left: 1%;
+    top: 0;
+    width: 34%;
+    height: 70%;
+    bborder: rgb(51, 255, 0) solid;
+    color: #a028a7;
+    padding: 0%;
+    font-size: 2.1vw;
+    opacity: 1;
+    text-align: justify;
+    word-wrap: break-word;
+    overflow:hidden;
+}
+
+.star {
+    bborder: rgb(0, 255, 0) solid 1px;
+    position: absolute;
+    width: 2%;
+    height: 4%;
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/star.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: transparent;
+    opacity: 90%;
+    transition: 50;
+}
+
+.output {
+    font-size: 1.2em;
+    color: brown;
+    width: 35%;
+    position: relative;
+    line-height: 0;
+    top: -10%;
+    bborder: solid red;
+}
+
+.canvas {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 35%;
+    height: 100%;
+    bborder: rgb(255, 174, 0) solid;
+    background-color: white;
+    padding: 1%;
+    font-size: 1.8vw;
+    opacity: 60%;
+}
